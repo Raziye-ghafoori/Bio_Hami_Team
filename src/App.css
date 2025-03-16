@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Bnazanin;
+  src: url('../public/Fonts/BNazanin.eot');
+  src:url('../public/Fonts/BNazanin.ttf') format('truetype'),
+       url('../public/Fonts/BNazanin.woff') format('woff');
+  font-weight: normal;
+  font-style:normal;
+}
+#root {
+  max-width: 100%;
+  height: 695px;
+  margin: 0; 
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
+.bg{
+  background-color: #f8f9fd40 !important;
+}
+
+.font-text{
+  font-family: Bmazanin;
+}
+
+.animation-opa{
+  opacity: 1;
+  animation: opc0to1 2s ease-in-out;
+}
+
+@keyframes opc0to1 {
+  0%   {opacity: 0;}
+  50%  {opacity: 0.25;}
+  50%  {opacity: 0.5;}
+  50%  {opacity: 0.75;}
+  100% {opacity: 1;}
+}
