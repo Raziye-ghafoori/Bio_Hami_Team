@@ -11,19 +11,19 @@
 
 
 
- با کلیک بر دو باتن "تماس با ما " و "سوالات متداول " یک Alart باز میشود که اطلاعاتی در اان نمایش داده میشود.
+ با کلیک بر دو باتن "تماس با ما " و "سوالات متداول " یک Alart باز میشود که اطلاعاتی در ان نمایش داده میشود.
 
-     -تماس با ما
+   -تماس با ما
      
 
  ![Screenshot 2025-03-16 214515](https://github.com/user-attachments/assets/b92f033b-a5a8-4aaf-b809-17cc01d95efa)
 
 
-    -سوالات متداول
+   -سوالات متداول
     
 ![Screenshot 2025-03-16 214528](https://github.com/user-attachments/assets/fd6d1658-aa56-4ce4-8f0c-8e4033dd9309)
 
 
  در سوالات متداول پاسخ هر سوال بصورت کشوی باز شده و پاسخ نمایش داده میشود
 
-    ![Screenshot 2025-03-16 214541](https://github.com/user-attachments/assets/b44fabc5-880a-4241-bf47-f2eabfe26594)
+  ![Screenshot 2025-03-16 214541](https://github.com/user-attachments/assets/b44fabc5-880a-4241-bf47-f2eabfe26594)
