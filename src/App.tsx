@@ -64,6 +64,8 @@ const handlerButtonEitaa = ()=>{
 function App() {
   const [theme,SetTheme] = useState('bg_defualt');
   const [themeItems,SetThemeItems] = useState('bg_items_defualt');
+  const [themeDl,SetThemeDL] = useState('light_bg');
+
 
   const { isOpen:isOpenPhone, onOpen:onOpenPhone, onClose:onClosePhone } = useDisclosure();
   const cancelRefPhone = useRef(null);
@@ -97,11 +99,15 @@ const handlerChangeTheme = (newTheme: string) => {
     }
   }
 
+  const handlerChangeThemeDL = (newThemeDL: string) => {
+    SetThemeDL(newThemeDL);
+}
+
   return (
     <>
     <Box display={'flex'} flexDirection={'column'} width={'100%'} height={'100%'} p={0} m={0} className={theme}>
     <IconButton onClick={onOpenTheme} p={'10px'} m={'20px'} w={'50px'} h={'50px'} aria-label='change-theme' icon={<FaPaintRoller/>} background={'none'} _hover={{background:'#f8f9fd40'}}  />
-    <Card  w={'500px'} border={'none'} className='bg animation-opa' m={'60px auto'} alignItems={'center'} p={'50px 0'}>
+    <Card  w={'500px'} border={'none'} className={`${themeDl} animation-opa`} m={'60px auto'} alignItems={'center'} p={'50px 0'}>
   <CardHeader >
     <Flex >
       <Flex flex='1' gap='4' alignItems='center' flexDirection={'column'} >
@@ -169,7 +175,7 @@ const handlerChangeTheme = (newTheme: string) => {
              <Accordion allowToggle>
               <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{ bg: '#f8f9fd40'}}>
+                  <AccordionButton _expanded={themeDl=='light_bg'?{ bg: '#f8f9fd40'}:{bg:'#00000040'}}>
                     <Box className="font-text" as='span' flex='1' textAlign='right'>
                       یک توضیح کلی راجع به خودتون میدین؟
                     </Box>
@@ -187,7 +193,7 @@ const handlerChangeTheme = (newTheme: string) => {
               
               <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{ bg: '#f8f9fd40'}}>
+                  <AccordionButton _expanded={themeDl=='light_bg'?{ bg: '#f8f9fd40'}:{bg:'#00000040'}}>
                     <Box className="font-text" as='span' flex='1' textAlign='right'>
                     چرا باید از شما رزرو کنیم؟
                     </Box>
@@ -204,7 +210,7 @@ const handlerChangeTheme = (newTheme: string) => {
 
               <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{ bg: '#f8f9fd40'}}>
+                  <AccordionButton _expanded={themeDl=='light_bg'?{ bg: '#f8f9fd40'}:{bg:'#00000040'}}>
                     <Box className="font-text" as='span' flex='1' textAlign='right'>
                     هتل های شما در چه رنج قیمتی هستند؟
                     </Box>
@@ -221,7 +227,7 @@ const handlerChangeTheme = (newTheme: string) => {
 
               <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{ bg: '#f8f9fd40'}}>
+                  <AccordionButton _expanded={themeDl=='light_bg'?{ bg: '#f8f9fd40'}:{bg:'#00000040'}}>
                     <Box className="font-text" as='span' flex='1' textAlign='right'>
                     پشتیبانی شامل چه مواردی میشه؟
                     </Box>
@@ -236,7 +242,7 @@ const handlerChangeTheme = (newTheme: string) => {
 
               <AccordionItem>
                 <h2>
-                  <AccordionButton _expanded={{ bg: '#f8f9fd40'}}>
+                  <AccordionButton _expanded={themeDl=='light_bg'?{ bg: '#f8f9fd40'}:{bg:'#00000040'}}>
                     <Box className="font-text" as='span' flex='1' textAlign='right'>
                     قیمت ها برای یک نفر هم همینه؟
                     </Box>
@@ -276,6 +282,11 @@ const handlerChangeTheme = (newTheme: string) => {
               <Button onClick={()=>{handlerChangeTheme('bg_pink')}} borderRadius={'100%'} backgroundImage={'linear-gradient(90deg, #ad5389, #3c1053 100%)'} _hover={{border:'2px red solid'}} _active={{}}></Button>
               <Button onClick={()=>{handlerChangeTheme('bg_blue')}} borderRadius={'100%'} backgroundImage={'linear-gradient(90deg, #e8cbc0 0%, #636fa4 100%)'} _hover={{border:'2px red solid'}} _active={{}}></Button>
               <Button onClick={()=>{handlerChangeTheme('bg_orange')}} borderRadius={'100%'} backgroundImage={'linear-gradient(90deg, #556270 0%, #ff6b6b 100%)'} _hover={{border:'2px red solid'}} _active={{}}></Button>
+              </Box>
+              <Box display={'flex'} justifyContent={'space-evenly'} m={'20px'}>
+                <Text>تیره یا روشن</Text>
+                <Button onClick={()=> handlerChangeThemeDL('light_bg')} borderRadius={'100%'} background={'white'} _hover={{border:'2px red solid'}} _active={{}}></Button>
+                <Button onClick={()=> handlerChangeThemeDL('dark_bg')} borderRadius={'100%'} background={'black'} _hover={{border:'2px red solid'}} _active={{}}></Button>
               </Box>
             </AlertDialogBody>
 
