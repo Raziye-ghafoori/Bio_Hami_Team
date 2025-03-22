@@ -41,4 +41,13 @@
 ![Screenshot 2025-03-22 140353](https://github.com/user-attachments/assets/c10fc2c7-002c-4d05-8ac8-38883ec4147b)
 
 
+
+اضافه کردن تم روشن و تیره به سایت
+
+![Screenshot 2025-03-22 142656](https://github.com/user-attachments/assets/a9765172-a25f-4ded-910d-a3dc82b93d03)
+
+
+
+![Screenshot 2025-03-22 142715](https://github.com/user-attachments/assets/c4a9fa50-8878-4bce-a6d6-6ad01bce031f)
+
   
