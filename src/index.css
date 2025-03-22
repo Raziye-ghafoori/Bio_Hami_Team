@@ -2,6 +2,10 @@
   #f8f9fd *light
   */
 
+  /* linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%) */
+  /* linear-gradient(90deg, #ad5389 0%, #3c1053 100%) */
+  /* linear-gradient(90deg, #e8cbc0 0%, #636fa4 100%) */
+  /* linear-gradient(90deg, #556270 0%, #ff6b6b 100%) */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

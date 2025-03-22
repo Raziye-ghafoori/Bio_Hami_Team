@@ -1,5 +1,10 @@
+  /* linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%) */
+  /* linear-gradient(90deg, #ad5389 0%, #3c1053 100%) */
+  /* linear-gradient(90deg, #e8cbc0 0%, #636fa4 100%) */
+  /* linear-gradient(90deg, #556270 0%, #ff6b6b 100%) */
+
 @font-face {
-  font-family: Bnazanin;
+ font-family: Bnazanin;
   src: url('../public/Fonts/BNazanin.eot');
   src:url('../public/Fonts/BNazanin.ttf') format('truetype'),
        url('../public/Fonts/BNazanin.woff') format('woff');
@@ -10,15 +15,47 @@
   max-width: 100%;
   height: 695px;
   margin: 0; 
-  padding: 2rem;
+  padding: 0;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
-  background-image: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  flex-direction: column;
+  background: #f8f9fd40;
 }
 
 .bg{
   background-color: #f8f9fd40 !important;
+}
+
+.bg_defualt{
+  background-image: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
+.bg_pink{
+  background-image: linear-gradient(90deg, #ad5389 0%, #3c1053 100%);
+}
+
+.bg_blue{
+  background-image: linear-gradient(90deg, #e8cbc0 0%, #636fa4 100%);
+}
+
+.bg_orange{
+  background-image: linear-gradient(90deg, #556270 0%, #ff6b6b 100%);
+}
+
+.bg_items_defualt{
+  background: #06024f !important;
+}
+
+.bg_items_pink{
+  background:#ad5389 !important;
+}
+
+.bg_items_blue{
+  background:#e8cbc0 !important;
+  color: #24243e !important;
+}
+
+.bg_items_orange{
+  background:#556270 !important;
 }
 
 .font-text{
