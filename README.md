@@ -27,3 +27,18 @@
  در سوالات متداول پاسخ هر سوال بصورت کشوی باز شده و پاسخ نمایش داده میشود
 
   ![Screenshot 2025-03-16 214541](https://github.com/user-attachments/assets/b44fabc5-880a-4241-bf47-f2eabfe26594)
+
+
+
+
+
+-اضافه کردن باتن تغییر تم صفحه 
+  با فشردن این باتن یک alart  باز میشود که تم سایت را به چهار مدل تغییر میدهد.
+  
+![Screenshot 2025-03-22 140335](https://github.com/user-attachments/assets/d6080420-7913-4b8e-bf7d-dfac171de9a8)
+
+
+![Screenshot 2025-03-22 140353](https://github.com/user-attachments/assets/c10fc2c7-002c-4d05-8ac8-38883ec4147b)
+
+
+  
